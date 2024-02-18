@@ -258,10 +258,6 @@ micro = np.mean(microAllRandom)
 macro = np.mean(macroAllRandom)
 micro_sd = np.std(microAllRandom)
 macro_sd = np.std(macroAllRandom)
-print("The avergae micro and macro F1 scores over {} random initializations are:  {} +/- {} and {} +/- {}: ".format(
-    numRandom, micro, micro_sd, macro, macro_sd))
-f.write("The avergae micro and macro F1 scores over {} random initializations are:  {} +/- {} and {} +/- {}: \n".format(
-    numRandom, micro, micro_sd, macro, macro_sd))
 
 '''avg best F1 scores over 5 random splits'''
 best_micro = np.mean(best_microAllRandom)
